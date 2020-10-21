@@ -12,6 +12,7 @@ class Hello {
 public:
   Hello(Msg msg) : msg_(msg) {}
   void print() {
+    printf("call print: \n");
     if (msg_.mType == MsgType::Info) {
       printf("info\n");
     } else if (msg_.mType == MsgType::Warn) {

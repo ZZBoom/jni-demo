@@ -30,7 +30,7 @@ static int register_native_methods(JNIEnv *env, const char *className,
 }
 
 int register_natives(JNIEnv *env) {
-  static const char *class_path_name = "./";
+  static const char *class_path_name = "HelloJni";
   if (!register_native_methods(env, class_path_name, methods,
                                sizeof(methods) / sizeof(methods[0]))) {
     return JNI_FALSE;
